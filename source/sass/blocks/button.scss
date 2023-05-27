@@ -9,7 +9,7 @@
   user-select: none;
   cursor: pointer;
   border: none;
-  transition: background-color 0.2 ease;
+  transition: opacity 0.2s ease, color 0.2s ease;
 
   &--primary {
     padding: 10px 30px;
@@ -22,5 +22,4 @@
       background-color: var(--accent-color);
     }
   }
-
 }
