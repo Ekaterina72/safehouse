@@ -1,0 +1,53 @@
+.header {
+  padding: 27px 0;
+
+  a {
+    font-weight: 500;
+    color: inherit;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: opacity 0.2s ease, color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  column-gap: 6%;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+
+.header__navigation {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.header__menu-button {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}

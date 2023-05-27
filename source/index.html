@@ -11,9 +11,42 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__logo" src="img/svg/logo.svg" alt="Логотип компании.">
-  </header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <img class="header__logo" src="img/svg/logo.svg" alt="Логотип компании." width="125" height="84">
+        <nav class="header__menu">
+          <ul class="header__navigation navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#services">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#price">Цены</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__contacts">
+            <a href="tel:+375251234567">+375 (25) 123-45-67</a>
+            <button class="header__button button button--primary" type="button">Заказать звонок</button>
+          </div>
+        </nav>
+        <button class="header__menu-button button" aria-label="переключатель отображения меню."></button>
+      </div>
+
+    </header>
+    <main class="main">
+      <div class="container">main</div>
+    </main>
+    <footer class="footer">
+      <div class="container">footer</div>
+    </footer>
+  </div>
+
   <script src="./js/main.js"></script>
 </body>
 

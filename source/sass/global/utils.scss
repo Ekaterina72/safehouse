@@ -1,3 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $ff-default;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }

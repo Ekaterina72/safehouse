@@ -21,7 +21,7 @@ let isDevelopment = true;
 export const compileStyles = () => {
   return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -99,7 +99,7 @@ export const startServer = (done) => {
   done();
 };
 
-const reloadServer = () => {
+const reloadServer = (done) => {
   browser.reload();
   done();
 };
