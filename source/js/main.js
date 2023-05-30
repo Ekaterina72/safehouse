@@ -1,1 +1,1 @@
-console.log('sdggaredgft');
+import './burger.js';

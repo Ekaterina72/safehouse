@@ -5,5 +5,19 @@
   flex-wrap: wrap;
   column-gap: 8.8%;
   row-gap: 10px;
+
+  @include vp-1023 {
+    width: 90%;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  @include vp-767 {
+    align-items: stretch;
+  }
 }
 
